@@ -1,7 +1,7 @@
 # Iterated Function Systems
 <p>Created using the turtle module in Python</p>
 <p>Inspiration taken from http://ecademy.agnesscott.edu/~lriddle/ifs </p>
-<Includes:</p>
+<p>Includes:</p>
 <ul>
   <li>box fractal</li>
   <li>heighway dragon</li>
@@ -18,3 +18,5 @@
   <li>sierpinski gasket</li>
   <li>symmetric binary tree</li>
 </ul>
+
+<p>Save to local computer and run from command line</p>
