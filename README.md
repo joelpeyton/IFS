@@ -1,5 +1,6 @@
 # Iterated Function Systems
 <p>Created using the turtle module in Python</p>
+<p>Inspiration taken from http://ecademy.agnesscott.edu/~lriddle/ifs </p>
 <Includes:</p>
 <ul>
   <li>box fractal</li>
