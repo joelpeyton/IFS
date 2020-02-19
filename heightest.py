@@ -14,42 +14,43 @@ setup(1920, 1080)
 # hide the turtle and set position of pen
 hideturtle()
 penup()
-setpos(-400, -400)
+setpos(0, -200)
 pendown()
 
-depth = 6 # how deep to make the recursion
+depth = 13 # how deep to make the recursion
 set_speed = 0 # speed of drawing 1 - 10, 10 being fastest, though 0 is faster still
 speed(speed = set_speed) # set pen speed
-pattern = ['a'] # the axiom or starting value
+pattern = ['f', 'x'] # the axiom or starting value
 line_length = 5 # length of line
-angle = 60 # angle to turn the pen through
-rules_a = ['b', '-', 'a', '-', 'b'] # rules of construction a -> b-a-b
-rules_b = ['a', '+', 'b', '+', 'a'] # rules of construction b -> a-b-a
+angle = 45 # angle to turn the pen through
+rules_x = ['+', 'f', 'x', '-', '-', 'f', 'y', '+'] # rules of construction a -> b-a-b
+rules_y = ['-', 'f', 'x', '+', '+', 'f', 'y', '-'] # rules of construction b -> a-b-a
 
 
 def sierpinski(depth, pattern):
     final_pattern = []
     if depth >= 0:
         for value in pattern:
-            if value == 'a':
-                final_pattern += rules_a
-            elif value == 'b':
-                final_pattern += rules_b
+            if value == 'f':
+                final_pattern.append('z')
+            elif value == 'x':
+                final_pattern += rules_x
+            elif value == 'y':
+                final_pattern += rules_y
             elif value == '+':
                 final_pattern.append('+')
-            else:
+            elif value == '-':
                 final_pattern.append('-')
 
         sierpinski(depth - 1, final_pattern)
     else:
         for value in pattern:
-            if value == 'a' or value == 'b':
+            if value == 'f':
                 forward(line_length)
             elif value == '+':
-                right(angle)
-            else:
                 left(angle)
+            elif value == '-':
+                right(angle)
                 
-
 sierpinski(depth, pattern)
-Screen().exitonclick()
+

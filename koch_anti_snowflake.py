@@ -49,3 +49,4 @@ def koch_snowflake(depth, pattern):
         
 
 koch_snowflake(depth, pattern)
+Screen().exitonclick()

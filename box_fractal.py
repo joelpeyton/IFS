@@ -46,8 +46,7 @@ def box_fractal(depth, pattern):
             elif value == '+':
                 right(angle)
             else:
-                left(angle)
-                
+                left(angle)  
 
 box_fractal(depth, pattern)
-
+Screen().exitonclick()

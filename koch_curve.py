@@ -48,3 +48,4 @@ def koch_curve(depth, pattern):
         
 
 koch_curve(depth, pattern)
+Screen().exitonclick()

@@ -50,3 +50,4 @@ def pentigree(depth, pattern):
         
 
 pentigree(depth, pattern)
+Screen().exitonclick()

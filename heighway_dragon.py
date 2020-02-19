@@ -16,7 +16,7 @@ setpos(300, 0)
 pendown()
 
 pattern = ['R'] # initiate the pattern
-iterations = 5 # number of iterations to make
+iterations = 10 # number of iterations to make
 set_speed = 0 # speed of drawing 1 - 10, 10 being fastest, though 0 is faster still
 speed(speed = set_speed) # set pen speed
 line_length = 10 # determine how long lines are
@@ -59,6 +59,7 @@ for i in range(iterations):
         else:
             left(angle)
 
+Screen().exitonclick()
         
 
     

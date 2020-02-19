@@ -107,3 +107,4 @@ def py_tree(branch, side, x_coord, y_coord, direction, line_length, depth):
         py_tree(branch, 'right', right_x_coord, right_y_coord, right_heading, line_length * (sqrt(2)/2), depth + 1)
 
 py_tree('left', 'left', -100, -400, 45, 200, 0)
+Screen().exitonclick()

@@ -48,3 +48,5 @@ for i in range(iterations):
     line_length *= 0.61803 # scale line length
     pen_size *= 0.95 # scale pen_size and set
     pensize(pen_size)
+
+Screen().exitonclick()

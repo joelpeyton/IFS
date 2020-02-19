@@ -49,4 +49,4 @@ def levy_curve(depth, pattern):
         
 
 levy_curve(depth, pattern)
-
+Screen().exitonclick()

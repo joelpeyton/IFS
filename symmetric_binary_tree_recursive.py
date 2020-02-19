@@ -58,3 +58,4 @@ def binary_tree(x_coord, y_coord, direction, line_length, pen_size, depth,
                     pen_size * pen_scale, depth + 1)
 
 binary_tree(0, 0, 0, 200, 5, 0)
+Screen().exitonclick()

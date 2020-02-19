@@ -53,4 +53,4 @@ def sierpinski(depth, pattern):
                 
 
 sierpinski(depth, pattern)
-
+Screen().exitonclick()
